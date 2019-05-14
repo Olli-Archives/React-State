@@ -17,11 +17,12 @@ newColor = ()=>{
 }
 
 
+
 componentDidMount(){
-  setInterval(() => this.newColor(), 2000); 
+  this.myInterval = setInterval(this.newColor, 2000); 
 }
 componentWillUnmount(){
-  clearInterval();
+  clearInterval(this.myInterval);
 }
 render(){
   return (
