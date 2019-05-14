@@ -4,23 +4,30 @@ import ColorPicker from './ColorPicker';
 
 export default class ColorContainer extends PureComponent{
   state={
-    color:''
+    color:'',
+    clicks:0
   }
  
   onClickHandler = (newColor)=>{
-    this.setState({ color: newColor });
+    let clickCount = this.state.clicks;
+    clickCount++;
+    this.setState({
+      color: newColor,
+      clicks: clickCount
+    });
     console.log(this.state.color);
   }
 
 
 
   render(){
+    const { color, clicks } = this.state;
     return (
       <div>
         <ColorPicker color='red' onClick={this.onClickHandler}/>
         <ColorPicker color='blue' onClick={this.onClickHandler}/>
         <ColorPicker color='green' onClick={this.onClickHandler}/> 
-        <ColorDiv color={this.state.color}/>
+        <ColorDiv color={color} clicks={clicks}/>
       </div>    
     );
   }
