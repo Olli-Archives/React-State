@@ -1,6 +1,7 @@
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 
+
 // eslint-disable-next-line
 module.exports = {
   entry: './src/index.js',
@@ -8,7 +9,7 @@ module.exports = {
     filename: 'bundle.[hash].js'
   },
   devServer: {
-    port: 7890
+    port: 7891
   },
   plugins: [
     new HtmlPlugin({ template: './src/index.html' }),
