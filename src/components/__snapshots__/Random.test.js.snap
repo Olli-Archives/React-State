@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`random component renders Random 1`] = `
+<div>
+  <ColorDiv
+    color=""
+  />
+</div>
+`;

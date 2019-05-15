@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`colordiv component renders Random 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "height": "100px",
+      "width": "200px",
+    }
+  }
+>
+  im a div
+</div>
+`;
