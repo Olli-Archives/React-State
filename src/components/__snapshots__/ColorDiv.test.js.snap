@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`color div  component renders color div container 1`] = `
+<div
+  className="blue"
+>
+  0
+</div>
+`;
